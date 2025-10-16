@@ -4,10 +4,10 @@ selector {
 }
 */
 body {
-    background-color: gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    background-image: linear-gradient(to right, #e3f7dd 0%, #72f079 100%);
 }
 h1, h2, h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Outfit, sans-serif;
 }
 label {
     font-family: 'montserrat', sans-serif;
@@ -15,11 +15,25 @@ label {
 input {
     font-family: 'montserrat', sans-serif;
 }
+
+.bototerms {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;  
+    margin-bottom: 5px;
+}
+.bototerms:hover {
+    background-color: #45a049;
+}
 input[type="text"], input[type="email"], input[type="password"], textarea {
     border: 2px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     padding: 10px;
-    width: 100%;
+    width: 10%;
     box-sizing: border-box;
     margin-bottom: 15px;
     font-size: 14px;
@@ -35,5 +49,17 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
+    background-color: #45a049;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;  
+}
+button:hover {
     background-color: #45a049;
 }   

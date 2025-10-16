@@ -14,22 +14,29 @@
         <h1>Formulari</h1>
         <hr>
 
-        <input type="button"
-            onclick="alert('Les societats Transports de Barcelona, SA; Ferrocarril Metropolità de Barcelona, SA, i Projectes i Serveis de Mobilitat, SA, (d’ara endavant, TMB) han creat JoTMBé amb la finalitat d’oferir a les persones usuàries del servei de transport públic a la ciutat de Barcelona i a la seva àrea metropolitana que s’hi inscriguin com a membres un seguit de serveis i avantatges per millorar la seva experiència de mobilitat i per conèixer tot el que TMB pot oferir i presentar per mitjà d’aquesta comunitat, i beneficiar-se’n. La relació entre els membres de JoTMBé i TMB es basa en tres grans àmbits de benefici per al client: econòmic/promocional, emocional i de servei.!')"
-            value="Prem aquí per llegir els nostres termes i condicions.">
-        <br><br>
-        <input  id="radio2" checked type="radio" name="x">
-        <label for="radio2"> Accepto les condicions </label> <!--label serveix per introduïr text-->
-        <br>
-        <input  id="radio1" type="radio" name="x">
-        <label for="radio1"> No accepto les condicions </label>
-        <br><br>
+        <div>
+            <input class="bototerms"type="button"
+                onclick="alert('Les societats Transports de Barcelona, SA; Ferrocarril Metropolità de Barcelona, SA, i Projectes i Serveis de Mobilitat, SA, (d’ara endavant, TMB) han creat JoTMBé amb la finalitat d’oferir a les persones usuàries del servei de transport públic a la ciutat de Barcelona i a la seva àrea metropolitana que s’hi inscriguin com a membres un seguit de serveis i avantatges per millorar la seva experiència de mobilitat i per conèixer tot el que TMB pot oferir i presentar per mitjà d’aquesta comunitat, i beneficiar-se’n. La relació entre els membres de JoTMBé i TMB es basa en tres grans àmbits de benefici per al client: econòmic/promocional, emocional i de servei.!')"
+                value="Prem aquí per llegir els nostres termes i condicions.">
+            <br><br>
+            <input  id="radio2" checked type="radio" name="x">
+            <label for="radio2"> Accepto les condicions </label> <!--label serveix per introduïr text-->
+            <br>
+            <input  id="radio1" type="radio" name="x">
+            <label for="radio1"> No accepto les condicions </label>
+            <br><br>
+        </div>
         <label> Introdueix el nom d'usuari </label>
         <input type="text" placeholder="usuari o email" name="usuari"> <!--input és l'etiqueta per fer els camps del formulari.-->
         <br> <!--br és un salt de línia-->
 
         <label> Introdueix la contrassenya </label> <!--label serveix per introduïr text-->
         <input type="password" placeholder="******">
+        <div> <!--div és un contenidor-->
+            <input type="checkbox" id="recorda"> <!--checkbox és una casella de verificació-->
+            <label for="recorda"> Recorda'm </label>
+        </div>
+        <br>
         <input type="submit" value="enviar">
         <br><br>
         <label for ="naixement"> Data de naixement </label>
@@ -43,6 +50,16 @@
             <option value="Altres">Altres</option>
         </select>
         <br><br>
+        <div>
+            <label for="provincia">Selecciona la província on vius.</label> <!--llista d'opcions-->
+            <select id="provincia" name="provincia">
+            <option value="Barcelona">Barcelona</option>
+            <option value="Tarragona">Tarragona</option>
+            <option value="Girona">Girona</option>
+            <option value="Lleida">Lleida</option>
+            </select>
+            <br><br>
+        </div>
         <label> Puja una foto del teu DNI </label>
         <input type="file" name="dni" accept="image/*"> <!--accept serveix per dir quin tipus de fitxer es pot pujar-->
         <br><br>

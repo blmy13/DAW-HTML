@@ -1,3 +1,39 @@
-body{
-    background-color: gradient(to right, #d887e9, #e2b2ee);
+/*
+selector {
+    property: value;
 }
+*/
+body {
+    background-color: gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+label {
+    font-family: 'montserrat', sans-serif;
+}
+input {
+    font-family: 'montserrat', sans-serif;
+}
+input[type="text"], input[type="email"], input[type="password"], textarea {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;  
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}   

@@ -1,0 +1,37 @@
+h1 {
+    color: teal
+}
+
+p div {
+    color: olive;
+}
+
+h2,
+table caption {
+    color: blue
+}
+
+table, tr, td, th {
+    border:1px solid #000; border-collapse:collapse; padding:5px;
+}
+
+div p {
+    color: olive
+}
+
+.especial tr {
+    color: red;
+}
+
+p strong {
+    color: red;
+    font-weight: bold;
+}
+
+p .destacat {
+    color: orange;
+}
+
+p span#especial {
+    color: purple;
+}

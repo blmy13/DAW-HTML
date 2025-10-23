@@ -6,12 +6,17 @@ selector {
 body {
     background-image: linear-gradient(to right, #e3f7dd 0%, #72f079 100%);
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
     font-family: Outfit, sans-serif;
 }
+
 label {
     font-family: 'montserrat', sans-serif;
 }
+
 input {
     font-family: 'montserrat', sans-serif;
 }
@@ -23,13 +28,18 @@ input {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;  
+    font-size: 14px;
     margin-bottom: 5px;
 }
+
 .bototerms:hover {
     background-color: #45a049;
 }
-input[type="text"], input[type="email"], input[type="password"], textarea {
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
     border: 2px solid #ccc;
     border-radius: 10px;
     padding: 10px;
@@ -38,6 +48,7 @@ input[type="text"], input[type="email"], input[type="password"], textarea {
     margin-bottom: 15px;
     font-size: 14px;
 }
+
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -45,12 +56,13 @@ input[type="submit"] {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;  
+    font-size: 14px;
 }
 
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+
 button {
     background-color: #4CAF50;
     color: white;
@@ -58,8 +70,9 @@ button {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px;  
+    font-size: 14px;
 }
+
 button:hover {
     background-color: #45a049;
-}   
+}

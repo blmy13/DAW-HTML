@@ -33,5 +33,45 @@ p .destacat {
 }
 
 p span#especial {
+    color: fuchsia;
+}
+
+p a{
+    color: red
+}
+
+p a em {
+    color: blue
+}
+
+p span.especial {
     color: purple;
+}
+
+table thead tr th.especial {
+    color: orange
+}
+
+table tbody tr th.especial {
+    color: orange;
+}
+
+table tbody tr th {
+    color: red;
+}
+
+table tfoot tr th {
+    color: red;
+}
+
+table tr td {
+    color: green
+}
+
+td strong {
+    color: orange;
+}
+
+#adicional p a {
+    color: green;
 }

@@ -19,9 +19,8 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(14, 13, 13, 0.5);
     border : 2px  #B7A4A7;
-    
 }
 
 h1 {
@@ -36,28 +35,78 @@ h1 {
 
 .display {
     
+    background-color: #EEE5D1;
     height: 60px;
     margin-bottom: 10px;
+    font-family : 'roboto', monospace;
+    color: #5704047c;
     font-size: 24px;
     text-align: right;
     padding: 5px;
-    border: 1px solid #ccc;
+    border: none;
     border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 5);
 }
 
 div.buttons button.btn_clear {
-    width: 120px;
+    width: 138px;
     height: 60px;
     margin: 5px;
     font-size: 24px;
     border: none;
     border-radius: 50px;
     background-color: #7E5A4F;
-    color: #e3e3e3;
+    color: #B7A4A7;
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: 0 4px #653F2A;
 }
+div.buttons button.btn_clear:hover {
+    background-color: #653F2A;
+}
+
+div.buttons button.btn_dot {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50px;
+    background-color: #7E5A4F;
+    color: #B7A4A7;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px #653F2A;
+}
+div.buttons button.btn_dot:hover {
+    background-color: #653F2A;
+}
+div.buttons button.btn_dot:active {
+    box-shadow: 0 2px #653F2A;
+    transform: translateY(2px);
+}
+
+div.buttons button.btn_del {
+    width: 138px;
+    height: 60px;
+    margin: 5px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50px;
+    background-color: #7E5A4F;
+    color: #B7A4A7;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px #653F2A;
+}
+div.buttons button.btn_del:active {
+    box-shadow: 0 2px #653F2A;
+    transform: translateY(2px);
+}
+div.buttons button.btn_del:hover {
+    background-color: #653F2A;
+}
+
 div.buttons button.btn_clear:active {
     box-shadow: 0 2px #653F2A;
     transform: translateY(2px);
@@ -80,6 +129,9 @@ div.buttons button.btn_number:active {
     box-shadow: 0 2px #653F2A;
     transform: translateY(2px);
 }
+div.buttons button.btn_number:hover {
+    background-color: #c3b8aab0;
+}
 div.buttons button.btn_equal {
     width: 60px;
     height: 60px;
@@ -88,7 +140,7 @@ div.buttons button.btn_equal {
     border: none;
     border-radius: 50px;
     background-color: #4C3626;
-    color: #e3e3e3;
+    color: #B7A4A7;
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: 0 4px #653F2A;
@@ -96,6 +148,9 @@ div.buttons button.btn_equal {
 div.buttons button.btn_equal:active {
     box-shadow: 0 2px #653F2A;
     transform: translateY(2px);
+}
+div.buttons button.btn_equal:hover {
+    background-color: #653F2A;
 }
 div.buttons button.btn_ope {
     width: 60px;
@@ -113,7 +168,9 @@ div.buttons button.btn_ope {
 div.buttons button.btn_ope:active{
     box-shadow: 0 2px #653F2A;
     transform: translateY(2px);
-    
+}
+div.buttons button.btn_ope:hover {
+    background-color: #9E7E6D;
 }
 
 

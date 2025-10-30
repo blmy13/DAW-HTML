@@ -1,0 +1,119 @@
+body {
+    background-color : #291c18;
+    font-family : Lexend Deca, sans-serif;
+}
+
+div.calculator {
+    
+    background-color : #e7d2db;
+    width : 322px;
+    margin : 100px auto;
+    padding : 20px;
+    border-radius : 25px;
+    box-shadow : 0 4px 8px rgb(250, 245, 245);
+    justify-content: center;
+    
+}
+div.calculator .display {
+
+    background-color : #96c8cc;
+    border : 2px solid #e2c7c77e;
+    border-radius : 20px;
+    padding : 20px;
+    margin-bottom : 10px;
+    font-size : 24px;
+    text-align : center;
+    height : 50px;
+    box-shadow : inset 0 0 5px #000000;
+}
+
+.btn_number {
+    background-color : #8DDCA4;
+    border : none;
+    
+    padding : 15px 32px;
+    text-align : center;
+    text-decoration : none;
+    display : inline-block;
+    font-size : 16px;
+    margin : 4px 2px;
+    cursor : pointer;
+    border-radius : 12px;
+    box-shadow : 0 5px #999;
+}
+
+.btn_number:hover {
+    background-color : #a3e1bbc9;
+}
+.btn_number:active {
+    background-color : #8DDCA4;
+    box-shadow : 0 2px #666;
+    transform : translateY(4px);
+}
+
+.btn_ope {
+     background-color : #F5CCD7;
+    border : none;
+    width: 7px;
+    padding : 15px 32px;
+    text-align : center;
+    text-decoration : none;
+    display : inline-block;
+    font-size : 16px;
+    margin : 4px 2px;
+    cursor : pointer;
+    border-radius : 12px;
+    box-shadow : 0 5px #999;
+}
+.btn_ope:hover {
+    background-color : #fad4dac9;
+}
+.btn_ope:active {
+    background-color : #F5CCD7;
+    box-shadow : 0 2px #666;
+    transform : translateY(4px);
+}
+
+.btn_clear {
+    background-color : #528694;
+    border : none; 
+    padding : 15px 32px;
+    text-align : center;
+    text-decoration : none;
+    display : inline-block;
+    font-size : 16px;
+    margin : 4px 2px;
+    cursor : pointer;
+    border-radius : 12px;
+    box-shadow : 0 5px #999;
+}
+.btn_clear:hover {
+    background-color : #6aa8bba1;
+}
+.btn_clear:active {
+    background-color : #528694;
+    box-shadow : 0 2px #666;
+    transform : translateY(4px);
+}
+
+.btn_equal {
+    background-color : #A2969A;
+    border : none; 
+    padding : 15px 32px;
+    text-align : center;
+    text-decoration : none;
+    display : inline-block;
+    font-size : 16px;
+    margin : 4px 2px;
+    cursor : pointer;
+    border-radius : 12px;
+    box-shadow : 0 5px #999;
+}
+.btn_equal:hover {
+    background-color : #787593;
+}
+.btn_equal:active {
+    background-color : #5a5774;
+    box-shadow : 0 2px #666;
+    transform : translateY(4px);
+}

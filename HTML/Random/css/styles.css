@@ -36,6 +36,7 @@ h1 {
 .display {
     
     background-color: #EEE5D1;
+    width: 96%;
     height: 60px;
     margin-bottom: 10px;
     font-family : 'roboto', monospace;

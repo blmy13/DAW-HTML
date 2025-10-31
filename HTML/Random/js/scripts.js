@@ -9,7 +9,7 @@ buttons.forEach(button => {
         // 1. NÚMEROS, OPERADORS I PUNT        
         if (button.classList.contains('btn_number') || 
             button.classList.contains('btn_ope') || 
-            button.classList.contains('btn_dot')) { // <--- CORRECCIÓ / MILLORA
+            button.classList.contains('btn_dot')) { 
                  
             if (runningTotal === '' && (value === '+' || value === '*' || value === '/')) {
                 return; 

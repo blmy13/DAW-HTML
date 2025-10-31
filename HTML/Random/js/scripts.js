@@ -6,7 +6,7 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
         const value = button.textContent;
 
-        // 1. NÚMEROS, OPERADORS I PUNT        
+        // 1. NÚMEROS OPERADORS I PUNT        
         if (button.classList.contains('btn_number') || 
             button.classList.contains('btn_ope') || 
             button.classList.contains('btn_dot')) { 

@@ -1,0 +1,25 @@
+.contenidor{ 
+    display:grid; 
+    grid-template-columns: 0.2fr 0.2fr 1fr 1fr ; 
+    grid-auto-rows: 100px; 
+    grid-gap:10px; 
+    grid-template-areas: 
+    "cap cap cap cap" 
+    "barra barra contingut contingut" 
+    "barra barra contingut contingut" 
+    "barra barra peu peu" 
+    }
+    
+
+.caixa {
+    border-radius: 5px;
+    padding: 40px;
+    background-color: aquamarine;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
+.barra { grid-area: barra; }
+.contingut { grid-area: contingut; } 
+.cap { grid-area: cap; } 
+.peu { grid-area: peu; }

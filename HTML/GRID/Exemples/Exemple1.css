@@ -1,0 +1,11 @@
+
+.contenidor{display:grid; }
+
+.caixa {
+    border-radius: 5px; padding: 10px;
+    background-color: aquamarine; border: 2px solid red;
+    display:flex; justify-content: center; align-items: center;
+  }
+
+
+

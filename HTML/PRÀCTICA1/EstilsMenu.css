@@ -1,0 +1,42 @@
+body {
+
+    margin: 20px;
+    background-color: #2F131E;
+}
+
+.links {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Italianno', cursive;
+    font-size: 40px;
+
+}
+
+a {
+    color: #CEC3C1;
+    text-decoration: none;
+    margin: 15px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    transform: translateY(5px);
+}
+
+footer {
+    text-align: center;
+    color: #CEC3C1;
+    margin-top: 30px;
+    font-family: 'Italianno', cursive;
+    font-size: 25px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: #CEC3C1;
+    margin-top: 30px;
+
+}

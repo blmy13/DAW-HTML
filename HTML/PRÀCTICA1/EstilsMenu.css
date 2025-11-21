@@ -1,42 +1,125 @@
 body {
 
-    margin: 20px;
-    background-color: #2F131E;
+    background-color: transparent;
+    background-image: url('./ImatgesRestaurant/fonsMenu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    flex-direction: column; 
+    margin-right: auto; 
+    padding-right: 20px;
+}
+
+span.logo {
+    font-family: 'pixelify sans', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    margin-left: 10px;
+}
+
+.sublogo {
+    font-family: 'pixelify sans', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    margin-left: 10px; 
+    margin-top: -10px;
+    letter-spacing: 8px;
+
+}
+
+div.separador {
+    margin-top: 90px; 
 }
 
 .links {
     text-align: center;
     margin-top: 30px;
-    font-family: 'Italianno', cursive;
+    font-family: 'pixelify sans', cursive;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
     font-size: 40px;
 
 }
 
-a {
+nav {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
     color: #CEC3C1;
-    text-decoration: none;
-    margin: 15px;
-    transition: all 0.3s ease;
 }
 
-a:hover {
+ul.navegacio-header {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+ul.navegacio-header li {
+    font-family: 'pixelify sans', cursive;
+    font-size: 30px;
+    color: #2F131E;
+}
+
+.menu-item {
+    font-family: 'pixelify sans', cursive;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    transition: all 0.3s ease;
+    
+}
+
+li a:hover {
+    color: #ffffff;
+    text-shadow: #950ca1 4px 4px 6px ;
     text-decoration: underline;
-    transform: translateY(5px);
+    transform: translateY(3px);
+    
 }
 
 footer {
     text-align: center;
-    color: #CEC3C1;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
     margin-top: 30px;
-    font-family: 'Italianno', cursive;
+    font-family: 'pixelify sans', cursive;
     font-size: 25px;
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    color: #CEC3C1;
-    margin-top: 30px;
-
+.instagram {
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: none;
+    box-shadow: #950ca1 2px 2px 5px;
 }

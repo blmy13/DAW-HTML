@@ -1,21 +1,35 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    margin: 10px;
-    background-color: #2F131E;
+body { 
+    
+    background-color: transparent;
+    background-image: url('./ImatgesRestaurant/fonsInici.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    min-height: 100vh;
+    
 }
 
 h1 {
-    color: #CEC3C1;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
     text-align: center;
-    font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 100px
+    font-family: 'pixelify sans', cursive;
+    font-size: 80px;
+    letter-spacing: 8px;
     
 }
 
 h2 {
-    color: #CEC3C1;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
     text-align: center;
-    font-family: 'Italianno', cursive;
+    font-family: 'pixelify sans', cursive;
     font-size: 50px
 }
 
@@ -26,57 +40,160 @@ img {
     margin-top: 15px;
     width: 40%;
     border-radius: 15px;
-    box-shadow: #534c4e 5px 5px 15px;
+    border: #edf054 5px groove;
+    box-shadow: #950ca1 5px 5px 15px;
 
 }
 
 .caixa {
     height: auto;
     width: 60%;
-
     margin: auto;
     text-align: center;
-    background-color: #7F6B70;
+    backdrop-filter: blur(5px);
+    border: #edf054 5px groove;
+    background: rgba(255, 255, 255, 0.2);
     padding: 20px;
     border-radius: 15px;
-    box-shadow: #534c4e 5px 5px 15px;
+    box-shadow: #edf0546e 5px 5px 15px;
 
-}
-
-.links {
-    text-align: center;
-    margin-top: 30px;
-    font-family: 'Italianno', cursive;
-    font-size: 40px;
-
-}
-
-a {
-    color: #CEC3C1;
-    text-decoration: none;
-    margin: 15px;
-    transition: all 0.3s ease;
-}
-
-a:hover {
-    text-decoration: underline;
-    transform: translateY(5px);
 }
 
 footer {
     text-align: center;
-    color: #CEC3C1;
     margin-top: 30px;
-    font-family: 'Italianno', cursive;
+    font-family: 'pixelify sans', cursive;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
     font-size: 25px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 .text-caixa {
-    color: #2F131E;
-    font-family: 'Italianno';
+    color: #edf054;
+    text-shadow: #950ca1 2px 2px 5px;
+    font-family: 'pixelify sans', cursive;
     font-size: 30px;
-    text-align: justify;
+    text-align: center;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 }
+
+span.logo {
+    font-family: 'pixelify sans', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    margin-left: 10px;
+}
+.sublogo {
+    font-family: 'pixelify sans', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    margin-left: 10px; 
+    margin-top: -10px;
+    letter-spacing: 8px;
+
+}
+
+header {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    flex-direction: column; 
+    margin-right: auto; 
+    padding-right: 20px;
+}
+
+div.separador {
+    margin-top: 90px; 
+}
+nav {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    color: #CEC3C1;
+}
+
+ul.navegacio-header {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+ul.navegacio-header li {
+    font-family: 'pixelify sans', cursive;
+    font-size: 30px;
+}
+
+.navegacio-header li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    transition: all 0.3s ease;
+    
+}
+
+.navegacio-header a:hover {
+    color: #ffffff;
+    text-shadow: #950ca1 4px 4px 6px ;
+    text-decoration: underline;
+    transform: translateY(3px);
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'pixelify sans', cursive;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    font-size: 25px;
+}
+
+nav.navegacio-peu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.navegacio-peu li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+}
+
+.navegacio-peu a:hover {
+    color: #ffffff;
+    text-shadow: #950ca1 4px 4px 6px ;
+    text-decoration: underline;
+    transform: translateY(3px);
+}
+
+
+.instagram {
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: none;
+    box-shadow: #950ca1 2px 2px 5px;
+}
+

@@ -1,5 +1,10 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
     background-color: transparent;
     background-image: url('./ImatgesRestaurant/fonsMenu.jpg');
     background-repeat: no-repeat;
@@ -109,11 +114,34 @@ li a:hover {
 
 footer {
     text-align: center;
-    color: #edf054;
-    text-shadow: #950ca1 3px 3px 5px ;
     margin-top: 30px;
     font-family: 'pixelify sans', cursive;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
     font-size: 25px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+nav.navegacio-peu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.navegacio-peu li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+}
+
+.navegacio-peu a:hover {
+    color: #ffffff;
+    text-shadow: #950ca1 4px 4px 6px ;
+    text-decoration: underline;
+    transform: translateY(3px);
 }
 
 .instagram {

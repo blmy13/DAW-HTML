@@ -1,64 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
-    <link rel="stylesheet" href="EstilsMenu.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="EstilsMenu.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
+    <!-- Header -->
     <header>
-        <div>
-            <span class="logo">La Nàusea</span>
-            <span class="sublogo">Cuina Avanguardista Catalana</span>
-        </div>
-        
-        <a target="_blank" href="https://www.instagram.com/explore/locations/1381268/mr-beef/">
-            <img class="instagram" src="./ImatgesRestaurant/instagram.png" alt="Instagram">
-        </a>
+      <div>
+        <span class="logo">La Nàusea</span>
+        <span class="sublogo">Cuina Avanguardista Catalana</span>
+      </div>
+      <a
+        target="_blank"
+        href="https://www.instagram.com/explore/locations/1381268/mr-beef/"
+      >
+        <img
+          class="instagram"
+          src="./ImatgesRestaurant/instagram.png"
+          alt="Instagram"
+        />
+      </a>
     </header>
-    <div class="separador">
-        <nav> 
-            <ul class="navegacio-header">
-                <li><a href="Index.html">Inici</a> </li>
-                <li><a href="Menu.html">Menú</a> </li>
-                <li><a href="Contacte.html">Contacte</a></li>
-                <li><a target="_blank"
-                href="https://www.google.com/maps/place/Mr.+Beef/@41.8944393,-87.6373979,16z/data=!3m1!4b1!4m6!3m5!1s0x880e2cb5475ad0bf:0x4917adc43c6303c2!8m2!3d41.8944393!4d-87.6373979!16s%2Fg%2F1tjwjb7p?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D">Ubicació</a> </li>
-            </ul>
-        </nav>
-        <ul class="menu-list">
-            <li class="menu-item">
-                <h2>Entrants</h2>
-                <p>Braves Nàusea - Patates fregides amb salsa especial de la casa</p>
-                <p>Carpaccio de vedella - Làmines fines de vedella amb parmesà i rúcula</p>
-            </li>
-            <li class="menu-item">
-                <h2>Plats Principals</h2>
-                <p>Filet de vedella a la brasa - Acompanyat de verdures de temporada i patates al forn</p>
-                <p>Salmó a la planxa - Amb salsa de cítrics i arròs basmati</p>
-            </li>
-            <li class="menu-item">
-                <h2>Postres</h2>
-                <p>Tiramisú clàssic - Capes de mascarpone i cafè amb cacau en pols</p>
-                <p>Gelat artesanal - Varietat de sabors fets a casa</p>
-            </li>
-        </ul>
-        <footer>
-            <nav class="navegacio-peu">
-            <a href="index.html">Inici</a> 
-            <a href="menu.html">Menú</a> 
-            <a href="contacte.html">Contacte</a> 
-            <a target="_blank" href="https://www.google.com/maps/place/Mr.+Beef/@41.8944393,-87.6373979,16z/data=!3m1!4b1!4m6!3m5!1s0x880e2cb5475ad0bf:0x4917adc43c6303c2!8m2!3d41.8944393!4d-87.6373979!16s%2Fg%2F1tjwjb7p?entry=ttu&g_ep=EgoyMDI1MTExNy4wIKXMDSoASAFQAw%3D%3D">Ubicació</a> 
-        </nav>
-            <p>© 2025 La Nàusea. Tots els drets reservats.</p>
-        </footer>
-    </div>
-</body>
 
+    <main class="contingut-principal">
+      <div class="separador">
+        <nav>
+          <ul class="navegacio-header">
+            <li><a href="Index.html">Inici</a></li>
+            <li><a href="Menu.html">Menú</a></li>
+            <li><a href="Contacte.html">Contacte</a></li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.google.com/maps/place/Mr.+Beef/"
+                >Ubicació</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="tab-buttons-container">
+          <button
+            class="tab-button"
+            onclick="mostrarPestanya('entrants', this)"
+          >
+            Entrants
+          </button>
+          <button
+            class="tab-button"
+            onclick="mostrarPestanya('principals', this)"
+          >
+            Plats Principals
+          </button>
+          <button class="tab-button" onclick="mostrarPestanya('postres', this)">
+            Postres
+          </button>
+          <button class="tab-button" onclick="mostrarPestanya('begudes', this)">
+            Begudes
+          </button>
+        </div>
+
+        <div class="tab-content-container">
+          <div id="entrants" class="menu-content active">
+            <div class="menu-taula-grid">
+              <div class="menu-header-row">
+                <div class="col-foto">Foto</div>
+                <div class="col-plat">Plat</div>
+                <div class="col-descripcio">Descripció</div>
+                <div class="col-preu">Preu</div>
+              </div>
+              <div class="menu-row fila-plat">
+                <div class="col-foto">
+                  <img src="./ImatgesRestaurant/braves.png" alt="" />
+                </div>
+                <div class="col-plat">Braves Nàusea</div>
+                <div class="col-descripcio">
+                  Patates fregides amb salsa especial de la casa
+                </div>
+                <div class="col-preu">6,40 €</div>
+              </div>
+              <div class="menu-row fila-plat2">
+                <div class="col-foto">
+                  <img src="./ImatgesRestaurant/carpaccio.png" alt="" />
+                </div>
+                <div class="col-plat">Carpaccio de Vedella</div>
+                <div class="col-descripcio">
+                  Làmines fines de vedella amb parmesà i rúcula
+                </div>
+                <div class="col-preu">11,00 €</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="principals" class="menu-content">
+            <div class="menu-taula-grid">
+              <div class="menu-header-row">
+                <div class="col-foto">Foto</div>
+                <div class="col-plat">Plat</div>
+                <div class="col-descripcio">Descripció</div>
+                <div class="col-preu">Preu</div>
+              </div>
+              <div class="menu-row fila-plat">
+                <div class="col-foto">
+                  <img src="./ImatgesRestaurant/arros calamar.png" alt="" />
+                </div>
+                <div class="col-plat">Arròs de Marisc</div>
+                <div class="col-descripcio">
+                  Arròs caldós amb gambes, musclos i calamars
+                </div>
+                <div class="col-preu">18,00 €</div>
+              </div>
+              <div class="menu-row fila-plat2">
+                <div class="col-foto">
+                  <img src="./ImatgesRestaurant/filet.png" alt="" />
+                </div>
+                <div class="col-plat">Filet de Vedella</div>
+                <div class="col-descripcio">
+                  Filet de vedella a la brasa amb salsa de bolets
+                </div>
+                <div class="col-preu">13,66 €</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="postres" class="menu-content">
+            <div class="menu-taula-grid">
+              <div class="menu-header-row">
+                <div class="col-foto">Foto</div>
+                <div class="col-plat">Plat</div>
+                <div class="col-descripcio">Descripció</div>
+                <div class="col-preu">Preu</div>
+              </div>
+              <div class="menu-row fila-plat">
+                <div class="col-foto">
+                  <img src="./ImatgesRestaurant/crema.png" alt="" />
+                </div>
+                <div class="col-plat">Crema Catalana</div>
+                <div class="col-descripcio">
+                  Clàssica crema cremada amb un toc de canyella
+                </div>
+                <div class="col-preu">6,00 €</div>
+              </div>
+              <div class="menu-row fila-plat2">
+                <div class="col-foto">
+                  <img src="./ImatgesRestaurant/pastis.png" alt="" />
+                </div>
+                <div class="col-plat">Tarta de Formatge</div>
+                <div class="col-descripcio">
+                  Tarta de formatge amb base de galeta i coulis de fruits
+                  vermells
+                </div>
+                <div class="col-preu">6,50 €</div>
+              </div>
+            </div>
+          </div>
+
+          <div id="begudes" class="menu-content">
+            <div class="menu-taula-grid">
+              <div class="menu-header-row">
+                <div class="col-foto">Foto</div>
+                <div class="col-plat">Plat</div>
+                <div class="col-descripcio">Descripció</div>
+                <div class="col-preu">Preu</div>
+              </div>
+              <div class="menu-row fila-plat">
+                <div class="col-foto">
+                  <img src="./ImatgesRestaurant/cervesa.png" alt="" />
+                </div>
+                <div class="col-plat">Cervesa Artesana</div>
+                <div class="col-descripcio">
+                  Cervesa local amb sabor únic i refrescant
+                </div>
+                <div class="col-preu">4,50 €</div>
+              </div>
+              <div class="menu-row fila-plat2">
+                <div class="col-foto">
+                  <img src="./ImatgesRestaurant/vi.png" alt="" />
+                </div>
+                <div class="col-plat">Vi mediterrani</div>
+                <div class="col-descripcio">
+                  Selecció de vins provinents de la costa mediterrània de
+                  diversos països
+                </div>
+                <div class="col-preu">15,00 €</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-horaris">
+      <div class="Horaris">
+        <h2>Horaris</h2>
+        <ul class="llista-horaris">
+          <li>Dilluns a Divendres: 13:00 - 16:00 | 20:00 - 23:00</li>
+          <li>Caps de Setmana: 10:00 - 24:00</li>
+        </ul>
+      </div>
+    </div>
+    </main>
+
+    <footer>
+      <nav class="navegacio-peu">
+        <a href="index.html">Inici</a>
+        <a href="menu.html">Menú</a>
+        <a href="contacte.html">Contacte</a>
+        <a target="_blank" href="https://www.google.com/maps/place/Mr.+Beef/"
+          >Ubicació</a
+        >
+      </nav>
+      <p>© 2025 La Nàusea. Tots els drets reservats.</p>
+    </footer>
+
+    <script src="Menu.js"></script>
+  </body>
 </html>

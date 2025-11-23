@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    
+    background-color: transparent;
+    background-image: url('./ImatgesRestaurant/fonscontacte.png');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    
+}
+
+div.separador {
+    margin-top: 90px; 
+}
+
+main.contingut-principal {
+    flex-grow: 1;
+}
+
+span.logo {
+    font-family: 'pixelify sans', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    margin-left: 10px;
+}
+.sublogo {
+    font-family: 'pixelify sans', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    margin-left: 10px; 
+    margin-top: -10px;
+    letter-spacing: 8px;
+
+}
+
+header {
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 5px 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    display: flex;
+    flex-direction: column; 
+    margin-right: auto; 
+    padding-right: 20px;
+}
+
+nav {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+    justify-content: center;
+    color: #CEC3C1;
+}
+
+ul.navegacio-header {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+ul.navegacio-header li {
+    font-family: 'pixelify sans', cursive;
+    font-size: 30px;
+}
+
+.navegacio-header li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    transition: all 0.3s ease;
+    
+}
+
+.navegacio-header a:hover {
+    color: #ffffff;
+    text-shadow: #950ca1 4px 4px 6px ;
+    text-decoration: underline;
+    transform: translateY(3px);
+}
+
+.caixa-contacte {
+    height: auto;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border: #950ca1 5px groove;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: #950ca1 5px 5px 15px;
+}
+
+h1 {
+    font-family: 'pixelify sans', cursive;
+    font-size: 40px;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+label {
+    font-family: 'pixelify sans', cursive;
+    font-size: 20px;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 80%;
+    padding: 10px;
+    border: #950ca1 2px solid;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'pixelify sans', cursive;
+    box-shadow: #3d0642 2px 2px 5px;
+    resize: vertical;
+    background-color: rgba(155, 113, 153, 0.8);
+    
+}
+
+textarea:focus, input[type="text"]:focus, input[type="email"]:focus {
+    outline: none;
+    border-color: #950ca1;
+    box-shadow: #950ca1 2px 2px 8px;
+    background-color: rgba(214, 168, 233, 0.9);
+    color: #3d0642;
+}
+
+::placeholder {
+    color: #edf05483;
+}
+
+button.enviar-btn {
+    padding: 10px 20px;
+    font-family: 'pixelify sans', cursive;
+    font-size: 20px;
+    cursor: pointer;
+    color: #edf054;
+    background: rgba(149, 12, 161, 0.4); 
+    border: 3px groove #950ca1; 
+    box-shadow: #000000 3px 3px 5px;
+    transition: all 0.2s;
+}
+button.enviar-btn:hover {
+    background-color: #edf054;
+    color: #000000;
+    box-shadow: #950ca1 3px 3px 5px;
+}
+
+.mapa-contenidor {
+    width: 60%; 
+    margin: 40px auto; 
+}
+
+.mapa-contenidor iframe {
+    width: 100%; 
+    height: 400px; 
+    border-radius: 15px;
+    box-shadow: #950ca1 5px 5px 15px; 
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'pixelify sans', cursive;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    font-size: 25px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+nav.navegacio-peu {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.navegacio-peu li a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    
+}
+
+.navegacio-peu a:hover {
+    color: #ffffff;
+    text-shadow: #950ca1 4px 4px 6px ;
+    text-decoration: underline;
+    transform: translateY(3px);
+}
+
+.instagram {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: none;
+    box-shadow: #950ca1 2px 2px 5px;
+}
+.instagram:hover {
+    transform: scale(1.1);
+    box-shadow: #950ca1 4px 4px 8px;
+}

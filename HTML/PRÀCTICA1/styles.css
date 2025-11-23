@@ -12,6 +12,8 @@ body {
     background-size: cover; 
     background-position: center center;
     min-height: 100vh;
+    margin: 0;
+    padding: 0;
     
 }
 
@@ -158,15 +160,6 @@ ul.navegacio-header li {
     transform: translateY(3px);
 }
 
-footer {
-    text-align: center;
-    margin-top: 30px;
-    font-family: 'pixelify sans', cursive;
-    color: #edf054;
-    text-shadow: #950ca1 3px 3px 5px ;
-    font-size: 25px;
-}
-
 nav.navegacio-peu {
     display: flex;
     justify-content: center;
@@ -195,5 +188,9 @@ nav.navegacio-peu {
     border: none;
     padding: none;
     box-shadow: #950ca1 2px 2px 5px;
+}
+.instagram:hover {
+    transform: scale(1.1);
+    box-shadow: #950ca1 4px 4px 8px;
 }
 

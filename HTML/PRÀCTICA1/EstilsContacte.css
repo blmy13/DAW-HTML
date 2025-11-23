@@ -51,6 +51,7 @@ header {
     position: fixed;
     top: 0; 
     width: 100%;
+    height: 90px;
     z-index: 1000;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.5);
@@ -176,6 +177,35 @@ button.enviar-btn:hover {
     background-color: #edf054;
     color: #000000;
     box-shadow: #950ca1 3px 3px 5px;
+}
+
+.caixa-contacte .container-serveis {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.serveis {
+    
+    font-family: pixelify sans, cursive;
+    font-size: 20px;
+    color: #edf054;
+    text-shadow: #950ca1 3px 3px 5px ;
+    background: rgba(255, 255, 255, 0.2);
+    border: #950ca177 3px solid;
+    border-radius: 15px;
+    padding: 20px;
+    width: 450px;
+    text-align: center;
+    box-shadow: #950ca181 5px 5px 15px;
+}
+
+.serveis ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    text-align: left;
 }
 
 .mapa-contenidor {

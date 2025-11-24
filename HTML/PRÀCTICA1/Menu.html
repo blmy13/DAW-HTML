@@ -1,345 +1,336 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-    <link rel="stylesheet" href="EstilsMenu.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<html lang="ca">
 
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="EstilsMenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
     <header>
-      <div>
-        <span class="logo">La Nàusea</span>
-        <span class="sublogo">Cuina Avanguardista Catalana</span>
-      </div>
-      <a
-        target="_blank"
-        href="https://www.instagram.com/explore/locations/1381268/mr-beef/"
-      >
-        <img
-          class="instagram"
-          src="./ImatgesRestaurant/instagram.png"
-          alt="Instagram"
-        />
-      </a>
+        <div>
+            <span class="logo">La Nàusea</span>
+            <span class="sublogo">Cuina Avanguardista Catalana</span>
+        </div>
+        <a target="_blank" href="https://www.instagram.com/explore/locations/1381268/mr-beef/">
+            <img class="instagram" src="./ImatgesRestaurant/instagram.png" alt="Instagram">
+        </a>
     </header>
 
     <main class="contingut-principal">
-      <div class="separador">
-        <nav>
-          <ul class="navegacio-header">
-            <li><a href="Index.html">Inici</a></li>
-            <li><a href="Menu.html">Menú</a></li>
-            <li><a href="Contacte.html">Contacte</a></li>
-            <li>
-              <a
-                target="_blank"
-                href="https://www.google.com/maps/place/Mr.+Beef/"
-                >Ubicació</a
-              >
-            </li>
-          </ul>
-        </nav>
+        <div class="separador">
+            <nav>
+                <ul class="navegacio-header">
+                    <li><a href="Index.html">Inici</a></li>
+                    <li><a href="Menu.html">Menú</a></li>
+                    <li><a href="Contacte.html">Contacte</a></li>
+                    <li>
+                        <a target="_blank" href="https://www.google.com/maps/place/Mr.+Beef/">Ubicació</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <div class="tab-buttons-container">
-          <button
-            class="tab-button"
-            onclick="mostrarPestanya('entrants', this)"
-          >
-            Entrants
-          </button>
-          <button
-            class="tab-button"
-            onclick="mostrarPestanya('principals', this)"
-          >
-            Plats Principals
-          </button>
-          <button class="tab-button" onclick="mostrarPestanya('postres', this)">
-            Postres
-          </button>
-          <button class="tab-button" onclick="mostrarPestanya('begudes', this)">
-            Begudes
-          </button>
+            <div class="tab-buttons-container">
+                <button class="tab-button" onclick="mostrarPestanya('entrants', this)">
+                    Entrants
+                </button>
+                <button class="tab-button" onclick="mostrarPestanya('principals', this)">
+                    Plats Principals
+                </button>
+                <button class="tab-button" onclick="mostrarPestanya('postres', this)">
+                    Postres
+                </button>
+                <button class="tab-button" onclick="mostrarPestanya('begudes', this)">
+                    Begudes
+                </button>
+            </div>
+
+            <div class="tab-content-container">
+                <div id="entrants" class="menu-content active">
+                    <div class="menu-taula-grid">
+                        <div class="menu-header-row">
+                            <div class="col-foto">Foto</div>
+                            <div class="col-plat">Plat</div>
+                            <div class="col-descripcio">Descripció</div>
+                            <div class="col-preu">Preu</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/braves.png" alt="">
+                            </div>
+                            <div class="col-plat">Braves Nàusea</div>
+                            <div class="col-descripcio">
+                                Patates fregides amb salsa especial de la casa
+                            </div>
+                            <div class="col-preu">6,40 €</div>
+                        </div>
+                        <div class="menu-row fila-plat2">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/carpaccio.png" alt="">
+                            </div>
+                            <div class="col-plat">Carpaccio de Vedella</div>
+                            <div class="col-descripcio">
+                                Làmines fines de vedella amb parmesà i rúcula
+                            </div>
+                            <div class="col-preu">11,00 €</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/caneló.png" alt="">
+                            </div>
+                            <div class="col-plat">Caneló de Ceps i Escuma de Parmesà amb Tòfona Negra</div>
+                            <div class="col-descripcio">
+                                Un plat de confort tradicional elevat a l'alta cuina, amb textures airejades i un potent
+                                sabor umami
+                            </div>
+                            <div class="col-preu">9,40 €</div>
+                        </div>
+                        <div class="menu-row fila-plat2">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/ou.png" alt="">
+                            </div>
+                            <div class="col-plat">Ou a Baixa Temperatura amb Parmentier de Patata Fina</div>
+                            <div class="col-descripcio">
+                                Un plat senzill en aparença, però tècnicament perfecte, que juga amb la cremositat de la
+                                gemma i els sabors de la terra
+                            </div>
+                            <div class="col-preu">8,00 €</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/tartar.png" alt="">
+                            </div>
+                            <div class="col-plat">Tàrtar de Tonyina Roja Balfegó amb Esferificació de Ponzu</div>
+                            <div class="col-descripcio">
+                                Tàrtar de tonyina roja de la més alta qualitat, tallat a brunoise i lleugerament amanit
+                                amb oli de sèsam torrat i ratlladura de llima
+                            </div>
+                            <div class="col-preu">8,13 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="principals" class="menu-content">
+                    <div class="menu-taula-grid">
+                        <div class="menu-header-row">
+                            <div class="col-foto">Foto</div>
+                            <div class="col-plat">Plat</div>
+                            <div class="col-descripcio">Descripció</div>
+                            <div class="col-preu">Preu</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/arroscalamar.png" alt="">
+                            </div>
+                            <div class="col-plat">Arròs de Marisc</div>
+                            <div class="col-descripcio">
+                                Arròs caldós amb gambes, musclos i calamars
+                            </div>
+                            <div class="col-preu">18,00 €</div>
+                        </div>
+                        <div class="menu-row fila-plat2">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/filet.png" alt="">
+                            </div>
+                            <div class="col-plat">Filet de Vedella</div>
+                            <div class="col-descripcio">
+                                Filet de vedella a la brasa amb salsa de bolets
+                            </div>
+                            <div class="col-preu">13,66 €</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/lluç.png" alt="">
+                            </div>
+                            <div class="col-plat">Lluç de Palangre en Calamars a la Carbonara de Tòfona</div>
+                            <div class="col-descripcio">
+                                Un llom de lluç fresc de palangre, cuit a baixa temperatura servit sobre una carbonara
+                                de marisc
+                            </div>
+                            <div class="col-preu">13,00 €</div>
+                        </div>
+                        <div class="menu-row fila-plat2">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/remolatxa.png" alt="">
+                            </div>
+                            <div class="col-plat">Plat Vegetarià d'Autor: Jardí de Textures de Remolatxa i Formatge de
+                                Cabra</div>
+                            <div class="col-descripcio">
+                                Filet de vedella a la brasa amb salsa de bolets
+                            </div>
+                            <div class="col-preu">11,96 €</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/vega.png" alt="">
+                            </div>
+                            <div class="col-plat">Opció Vegana: "Filet" de Bolet Ostra amb Demi-Glace de Cep i Puré de
+                                Patata Triganera Trufat</div>
+                            <div class="col-descripcio">
+                                Un filet gruixut de bolet ostra de cultiu ecològic, marcat a la planxa o a la brasa i
+                                després banyat en una salsa rica, servit sobre una base de puré
+                            </div>
+                            <div class="col-preu">14,70 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="postres" class="menu-content">
+                    <div class="menu-taula-grid">
+                        <div class="menu-header-row">
+                            <div class="col-foto">Foto</div>
+                            <div class="col-plat">Plat</div>
+                            <div class="col-descripcio">Descripció</div>
+                            <div class="col-preu">Preu</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/crema.png" alt="">
+                            </div>
+                            <div class="col-plat">Crema Catalana</div>
+                            <div class="col-descripcio">
+                                Clàssica crema cremada amb un toc de canyella
+                            </div>
+                            <div class="col-preu">6,00 €</div>
+                        </div>
+                        <div class="menu-row fila-plat2">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/pastis.png" alt="">
+                            </div>
+                            <div class="col-plat">Tarta de Formatge</div>
+                            <div class="col-descripcio">
+                                Tarta de formatge amb base de galeta i coulis de fruits
+                                vermells
+                            </div>
+                            <div class="col-preu">6,30 €</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/citric.png" alt="">
+                            </div>
+                            <div class="col-plat">Cítrics en Textures amb Iogurt de Llet d'Ovella i Merenga Carbonitzada
+                            </div>
+                            <div class="col-descripcio">
+                                Un postre refrescant que combina diferents textures i sabors dels cítrics amb la
+                                suavitat del iogurt i el toc cruixent de la merenga
+                            </div>
+                            <div class="col-preu">7,40 €</div>
+                        </div>
+                        <div class="menu-row fila-plat2">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/gelat.png" alt="">
+                            </div>
+                            <div class="col-plat">Simfonia de Xocolata, Oli d'Oliva i Flor de Sal</div>
+                            <div class="col-descripcio">
+                                Gelat artesanal de xocolata negra amb un toc d'oli d'oliva verge extra i flor de sal
+                            </div>
+                            <div class="col-preu">9,30 €</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/tatin.png" alt="">
+                            </div>
+                            <div class="col-plat">Tatin de Poma Verda Invertida, Toffee de Miso Blanc i Gelat d'Herbes
+                                del Pirineu</div>
+                            <div class="col-descripcio">
+                                Una reinterpretació del clàssic tatin, amb poma verda cuita a la perfecció, un toffee
+                                suau i un gelat aromàtic
+                            </div>
+                            <div class="col-preu">8,00 €</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="begudes" class="menu-content">
+                    <div class="menu-taula-grid">
+                        <div class="menu-header-row">
+                            <div class="col-foto">Foto</div>
+                            <div class="col-plat">Plat</div>
+                            <div class="col-descripcio">Descripció</div>
+                            <div class="col-preu">Preu</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/cervesa.png" alt="">
+                            </div>
+                            <div class="col-plat">Cervesa Artesana</div>
+                            <div class="col-descripcio">
+                                Cervesa local amb sabor únic i refrescant
+                            </div>
+                            <div class="col-preu">4,30 €</div>
+                        </div>
+                        <div class="menu-row fila-plat2">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/vi.png" alt="">
+                            </div>
+                            <div class="col-plat">Vi mediterrani</div>
+                            <div class="col-descripcio">
+                                Selecció de vins provinents de la costa mediterrània de
+                                diversos països
+                            </div>
+                            <div class="col-preu">15,00 €</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/coctel.png" alt="">
+                            </div>
+                            <div class="col-plat">Coctel Nàusea 'Fumat de Gessamí'</div>
+                            <div class="col-descripcio">
+                                Una beguda complexa que juga amb l'acidesa, el fumat i els botànics florals
+                            </div>
+                            <div class="col-preu">7,80 €</div>
+                        </div>
+                        <div class="menu-row fila-plat2">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/kombutxa.png" alt="">
+                            </div>
+                            <div class="col-plat">Kombutxa de Bosc i Bolets</div>
+                            <div class="col-descripcio">
+                                Beguda fermentada artesanal amb infusió de bolets i fruits del bosc
+                            </div>
+                            <div class="col-preu">3,70 €</div>
+                        </div>
+                        <div class="menu-row fila-plat">
+                            <div class="col-foto">
+                                <img src="./ImatgesRestaurant/ratafia.png" alt="">
+                            </div>
+                            <div class="col-plat">Ratafia Envellida en Fusta</div>
+                            <div class="col-descripcio">
+                                Ratafia tradicional catalana envellida en bóta de roure
+                            </div>
+                            <div class="col-preu">7,00 €</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="tab-content-container">
-          <div id="entrants" class="menu-content active">
-            <div class="menu-taula-grid">
-              <div class="menu-header-row">
-                <div class="col-foto">Foto</div>
-                <div class="col-plat">Plat</div>
-                <div class="col-descripcio">Descripció</div>
-                <div class="col-preu">Preu</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/braves.png"/>
-                </div>
-                <div class="col-plat">Braves Nàusea</div>
-                <div class="col-descripcio">
-                  Patates fregides amb salsa especial de la casa
-                </div>
-                <div class="col-preu">6,40 €</div>
-              </div>
-              <div class="menu-row fila-plat2">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/carpaccio.png"/>
-                </div>
-                <div class="col-plat">Carpaccio de Vedella</div>
-                <div class="col-descripcio">
-                  Làmines fines de vedella amb parmesà i rúcula
-                </div>
-                <div class="col-preu">11,00 €</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/caneló.png"/>
-                </div>
-                <div class="col-plat">Caneló de Ceps i Escuma de Parmesà amb Tòfona Negra</div>
-                <div class="col-descripcio">
-                  Un plat de confort tradicional elevat a l'alta cuina, amb textures airejades i un potent sabor umami
-                </div>
-                <div class="col-preu">9,40 €</div>
-              </div>
-              <div class="menu-row fila-plat2">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/ou.png"/>
-                </div>
-                <div class="col-plat">Ou a Baixa Temperatura amb Parmentier de Patata Fina</div>
-                <div class="col-descripcio">
-                  Un plat senzill en aparença, però tècnicament perfecte, que juga amb la cremositat de la gemma i els sabors de la terra
-                </div>
-                <div class="col-preu">8,00 €</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/tartar.png"/>
-                </div>
-                <div class="col-plat">Tàrtar de Tonyina Roja Balfegó amb Esferificació de Ponzu</div>
-                <div class="col-descripcio">
-                  Tàrtar de tonyina roja de la més alta qualitat, tallat a brunoise i lleugerament amanit amb oli de sèsam torrat i ratlladura de llima
-                </div>
-                <div class="col-preu">8,13 €</div>
-              </div>
+        <div class="container-horaris">
+            <div class="Horaris">
+                <h2>Horaris</h2>
+                <ul class="llista-horaris">
+                    <li>Dilluns a Divendres: 13:00 - 16:00 | 20:00 - 23:00</li>
+                    <li>Caps de Setmana: 10:00 - 24:00</li>
+                </ul>
             </div>
-          </div>
-
-          <div id="principals" class="menu-content">
-            <div class="menu-taula-grid">
-              <div class="menu-header-row">
-                <div class="col-foto">Foto</div>
-                <div class="col-plat">Plat</div>
-                <div class="col-descripcio">Descripció</div>
-                <div class="col-preu">Preu</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/arros calamar.png"/>
-                </div>
-                <div class="col-plat">Arròs de Marisc</div>
-                <div class="col-descripcio">
-                  Arròs caldós amb gambes, musclos i calamars
-                </div>
-                <div class="col-preu">18,00 €</div>
-              </div>
-              <div class="menu-row fila-plat2">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/filet.png"/>
-                </div>
-                <div class="col-plat">Filet de Vedella</div>
-                <div class="col-descripcio">
-                  Filet de vedella a la brasa amb salsa de bolets
-                </div>
-                <div class="col-preu">13,66 €</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/lluç.png"/>
-                </div>
-                <div class="col-plat">Lluç de Palangre en Calamars a la Carbonara de Tòfona</div>
-                <div class="col-descripcio">
-                  Un llom de lluç fresc de palangre, cuit a baixa temperatura servit sobre una carbonara de marisc
-                </div>
-                <div class="col-preu">13,00 €</div>
-              </div>
-               <div class="menu-row fila-plat2">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/remolatxa.png"/>
-                </div>
-                <div class="col-plat">Plat Vegetarià d'Autor: Jardí de Textures de Remolatxa i Formatge de Cabra</div>
-                <div class="col-descripcio">
-                  Filet de vedella a la brasa amb salsa de bolets
-                </div>
-                <div class="col-preu">11,96 €</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/vega.png"/>
-                </div>
-                <div class="col-plat">Opció Vegana: "Filet" de Bolet Ostra amb Demi-Glace de Cep i Puré de Patata Triganera Trufat</div>
-                <div class="col-descripcio">
-                  Un filet gruixut de bolet ostra de cultiu ecològic, marcat a la planxa o a la brasa i després banyat en una salsa rica, servit sobre una base de puré
-                </div>
-                <div class="col-preu">14,70 €</div>
-              </div>
-            </div>
-          </div>
-
-          <div id="postres" class="menu-content">
-            <div class="menu-taula-grid">
-              <div class="menu-header-row">
-                <div class="col-foto">Foto</div>
-                <div class="col-plat">Plat</div>
-                <div class="col-descripcio">Descripció</div>
-                <div class="col-preu">Preu</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/crema.png"/>
-                </div>
-                <div class="col-plat">Crema Catalana</div>
-                <div class="col-descripcio">
-                  Clàssica crema cremada amb un toc de canyella
-                </div>
-                <div class="col-preu">6,00 €</div>
-              </div>
-              <div class="menu-row fila-plat2">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/pastis.png"/>
-                </div>
-                <div class="col-plat">Tarta de Formatge</div>
-                <div class="col-descripcio">
-                  Tarta de formatge amb base de galeta i coulis de fruits
-                  vermells
-                </div>
-                <div class="col-preu">6,30 €</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/citric.png"/>
-                </div>
-                <div class="col-plat">Cítrics en Textures amb Iogurt de Llet d'Ovella i Merenga Carbonitzada</div>
-                <div class="col-descripcio">
-                  Un postre refrescant que combina diferents textures i sabors dels cítrics amb la suavitat del iogurt i el toc cruixent de la merenga
-                </div>
-                <div class="col-preu">7,40 €</div>
-              </div>
-              <div class="menu-row fila-plat2">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/gelat.png"/>
-                </div>
-                <div class="col-plat">Simfonia de Xocolata, Oli d'Oliva i Flor de Sal</div>
-                <div class="col-descripcio">
-                  Gelat artesanal de xocolata negra amb un toc d'oli d'oliva verge extra i flor de sal
-                </div>
-                <div class="col-preu">9,30 €</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/tatin.png"/>
-                </div>
-                <div class="col-plat">Tatin de Poma Verda Invertida, Toffee de Miso Blanc i Gelat d'Herbes del Pirineu</div>
-                <div class="col-descripcio">
-                  Una reinterpretació del clàssic tatin, amb poma verda cuita a la perfecció, un toffee suau i un gelat aromàtic
-                </div>
-                <div class="col-preu">8,00 €</div>
-              </div>
-            </div>
-          </div>
-
-          <div id="begudes" class="menu-content">
-            <div class="menu-taula-grid">
-              <div class="menu-header-row">
-                <div class="col-foto">Foto</div>
-                <div class="col-plat">Plat</div>
-                <div class="col-descripcio">Descripció</div>
-                <div class="col-preu">Preu</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/cervesa.png"/>
-                </div>
-                <div class="col-plat">Cervesa Artesana</div>
-                <div class="col-descripcio">
-                  Cervesa local amb sabor únic i refrescant
-                </div>
-                <div class="col-preu">4,30 €</div>
-              </div>
-              <div class="menu-row fila-plat2">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/vi.png"/>
-                </div>
-                <div class="col-plat">Vi mediterrani</div>
-                <div class="col-descripcio">
-                  Selecció de vins provinents de la costa mediterrània de
-                  diversos països
-                </div>
-                <div class="col-preu">15,00 €</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/coctel.png"/>
-                </div>
-                <div class="col-plat">Coctel Nàusea 'Fumat de Gessamí'</div>
-                <div class="col-descripcio">
-                  Una beguda complexa que juga amb l'acidesa, el fumat i els botànics florals
-                </div>
-                <div class="col-preu">7,80 €</div>
-              </div>
-              <div class="menu-row fila-plat2">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/kombutxa.png"/>
-                </div>
-                <div class="col-plat">Kombutxa de Bosc i Bolets</div>
-                <div class="col-descripcio">
-                  Beguda fermentada artesanal amb infusió de bolets i fruits del bosc
-                </div>
-                <div class="col-preu">3,70 €</div>
-              </div>
-              <div class="menu-row fila-plat">
-                <div class="col-foto">
-                  <img src="./ImatgesRestaurant/ratafia.png"/>
-                </div>
-                <div class="col-plat">Ratafia Envellida en Fusta</div>
-                <div class="col-descripcio">
-                  Ratafia tradicional catalana envellida en bóta de roure
-                </div>
-                <div class="col-preu">7,00 €</div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="container-horaris">
-      <div class="Horaris">
-        <h2>Horaris</h2>
-        <ul class="llista-horaris">
-          <li>Dilluns a Divendres: 13:00 - 16:00 | 20:00 - 23:00</li>
-          <li>Caps de Setmana: 10:00 - 24:00</li>
-        </ul>
-      </div>
-    </div>
     </main>
 
     <footer>
-      <nav class="navegacio-peu">
-        <a href="index.html">Inici</a>
-        <a href="menu.html">Menú</a>
-        <a href="contacte.html">Contacte</a>
-        <a target="_blank" href="https://www.google.com/maps/place/Mr.+Beef/"
-          >Ubicació</a
-        >
-      </nav>
-      <p>© 2025 La Nàusea. Tots els drets reservats.</p>
+        <nav class="navegacio-peu">
+            <a href="index.html">Inici</a>
+            <a href="menu.html">Menú</a>
+            <a href="contacte.html">Contacte</a>
+            <a target="_blank" href="https://www.google.com/maps/place/Mr.+Beef/">Ubicació</a>
+        </nav>
+        <p>© 2025 La Nàusea. Tots els drets reservats.</p>
     </footer>
 
     <script src="Menu.js"></script>
-  </body>
+</body>
+
 </html>

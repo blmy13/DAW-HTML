@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-block-size: 100vh;
+    min-block-size: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background-color: white;
+    gap: 10px;
+    
+    grid-template-areas: 
+    "cap"
+    "main"
+    "peu";
+}
+
+.caixa {
+
+    background-color: azure;
+}
+
+.caixa-1 {
+    grid-area: cap;
+    height: 60px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.349);
+}
+.caixa-2 {
+    grid-area: main;
+    
+}
+.caixa-3 {
+    grid-area: peu;
+    height: 60px;
+    border-top: 2px solid rgba(0, 0, 0, 0.349);
+}
+
+.links {
+    display: inline-block;
+}

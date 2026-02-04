@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestió de Competició</title>
+    <link rel="stylesheet" href="estils.css">
+
+    <script src="funcions.js" defer></script>
+</head>
+<body>
+
+    <h1>Gestió de Competició Esportiva</h1>
+
+    <section>
+        <h2>Afegir Equip</h2>
+        <input type="text" id="nomEquip" placeholder="Nom de l'equip">
+        <button id="botoAfegir">Afegir</button>
+    </section>
+
+    <section>
+        <h2>Llista d'Equips</h2>
+        <ul id="llistaEquips"></ul>
+    </section>
+
+    <section>
+        <h2>Partits i Resultats</h2>
+        <button id="botoGenerar">Generar Partits Aleatoris</button>
+        <ul id="llistaPartits"></ul>
+    </section>
+
+    <section>
+        <h2>Classificació</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Equip</th>
+                    <th>Punts</th>
+                </tr>
+            </thead>
+            <tbody id="taulaClassificacio"></tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Reiniciar competició</h2>
+        <button id="botoReiniciar">Reiniciar</button>
+    </section>
+
+</body>
+</html>

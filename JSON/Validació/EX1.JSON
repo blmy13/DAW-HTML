@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "client": {
+      "type": "object",
+      "properties": {
+        "nom": {
+          "type": "string",
+          "minLength": 3
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "vip": {
+          "type": "boolean"
+        },
+        "descompte": {
+          "type": "number",
+          "minimum": 5,
+          "maximum": 20
+        }
+      },
+      "required": [
+        "nom",
+        "email"
+      ]
+    },
+    "habitacions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "properties": {
+          "tipus": {
+            "type": "string",
+            "enum": [
+              "individual",
+              "doble",
+              "suite"
+            ]
+          },
+          "nits": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "preu_nit": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        },
+        "required": [
+          "tipus",
+          "nits",
+          "preu_nit"
+        ]
+      }
+    }
+  },
+  "required": [
+    "client",
+    "habitacions"
+  ],
+  "if": {
+    "properties": {
+      "client": {
+        "properties": {
+          "vip": {
+            "const": true
+          }
+        },
+        "required": [
+          "vip"
+        ]
+      }
+    }
+  },
+  "then": {
+    "properties": {
+      "client": {
+        "required": [
+          "descompte"
+        ]
+      },
+      "habitacions": {
+        "items": {
+          "properties": {
+            "nits": {
+              "maximum": 7
+            }
+          }
+        }
+      }
+    }
+  }
+}

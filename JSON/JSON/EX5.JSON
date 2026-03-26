@@ -1,0 +1,25 @@
+{
+    "id_prestec": "457744k",
+    "data": "17-10-2000",
+    "usuari": {
+        "nom": "Mochi",
+        "id": "787849s"
+    },
+    "llibres" : [
+        {
+            "isbn" : "787-788-154",
+            "titol": "El Quijote",
+            "autor": "Alison"
+        },
+        {
+            "isbn" : "717-788-154",
+            "titol": "Los Hermanos Karamazov",
+            "autor": "Alison"
+        },{
+            "isbn" : "787-788-154",
+            "titol": "1984",
+            "autor": "Alison"
+        }
+    ],
+    "retornat": true
+}

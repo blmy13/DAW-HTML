@@ -1,0 +1,21 @@
+{
+    "institut": "La Mercè",
+    "cursos": [
+        {
+            "codi": "M7",
+            "nom": "Llenguatges de marques",
+            "hores": 60,
+            "alumnes": [
+                {
+                    "nom": "Anna",
+                    "edat": 20
+                },
+                {
+                    "nom": "Marc",
+                    "edat": 22
+                }
+            ]
+        }
+    ],
+    "actiu": true
+}

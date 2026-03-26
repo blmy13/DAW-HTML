@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "nom": {
+      "type": "string"
+    },
+    "correu": {
+      "type": "string",
+      "format": "email"
+    },
+    "tipus_consulta": {
+      "type": "string",
+      "enum": [
+        "tècnica",
+        "general"
+      ]
+    }
+  },
+  "required": [
+    "nom",
+    "correu",
+    "tipus_consulta"
+  ],
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "tipus_consulta": {
+            "const": "tècnica"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "prioritat": {
+            "type": "string",
+            "enum": [
+              "alta",
+              "mitjana",
+              "baixa"
+            ]
+          },
+          "producte_id": {
+            "type": "string",
+            "pattern": "^PROD-[A-Za-z0-9]{5}$"
+          }
+        },
+        "required": [
+          "prioritat",
+          "producte_id"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "tipus_consulta": {
+            "const": "general"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "missatge": {
+            "type": "string",
+            "minLength": 10
+          }
+        },
+        "required": [
+          "missatge"
+        ]
+      }
+    }
+  ]
+}

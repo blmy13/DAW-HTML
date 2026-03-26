@@ -1,0 +1,27 @@
+{
+    "id": "CMD-2001",
+    "data": "2026-04-20",
+    "client": {
+        "nom": "Joan Serra",
+        "adreça": {
+            "carrer": "Gran Via",
+            "ciutat": "Barcelona",
+            "codi_postal": "08001"
+        }
+    },
+    "productes": [
+        {
+            "id": "P01",
+            "nom": "Portàtil",
+            "quantitat": 1,
+            "preu_unitari": 799.99
+        },
+        {
+            "id": "P02",
+            "nom": "Ratolí",
+            "quantitat": 2,
+            "preu_unitari": 19.99
+        }
+    ],
+    "total": 839.97
+}

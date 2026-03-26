@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "esdeveniment": {
+      "type": "string"
+    },
+    "data": {
+      "type": "string"
+    },
+    "ubicació": {
+      "type": "object",
+      "properties": {
+        "ciutat": {
+          "type": "string"
+        },
+        "capacitat": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "ciutat",
+        "capacitat"
+      ]
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nom": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "edat": {
+            "type": "number",
+            "minimum": 18,
+            "maximum": 100
+          },
+          "entrada pagada": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "nom",
+          "edat",
+          "entrada pagada"
+        ]
+      }
+    }
+  },
+  "required": [
+    "esdeveniment",
+    "data",
+    "ubicació",
+    "participants"
+  ]
+}

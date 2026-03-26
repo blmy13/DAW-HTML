@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "activitats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tipus": {
+            "type": "string",
+            "enum": [
+              "login",
+              "modificació",
+              "esborrat"
+            ]
+          },
+          "usuari": {
+            "type": "string",
+            "format": "email"
+          },
+          "data": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "tipus",
+          "usuari",
+          "data"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "tipus": {
+                  "const": "login"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "ip": {
+                  "type": "string",
+                  "format": "ipv4"
+                }
+              },
+              "required": [
+                "ip"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "tipus": {
+                  "enum": [
+                    "modificació",
+                    "esborrat"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "descripció": {
+                  "type": "string",
+                  "minLength": 15
+                }
+              },
+              "required": [
+                "descripció"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "activitats"
+  ]
+}

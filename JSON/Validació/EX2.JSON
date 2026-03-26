@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "inventari": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "nom": {
+            "type": "string"
+          },
+          "categoria": {
+            "type": "string",
+            "enum": [
+              "electrònica",
+              "mobles",
+              "roba"
+            ]
+          },
+          "preu": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          }
+        },
+        "required": [
+          "nom",
+          "categoria",
+          "preu"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "categoria": {
+                  "const": "electrònica"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "garantia": {
+                  "type": "integer",
+                  "minimum": 6
+                }
+              },
+              "required": [
+                "garantia"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "categoria": {
+                  "const": "roba"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "talles": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "enum": ["XS", "S", "M", "L", "XL", "XXL"]
+                  },
+                  "minItems": 1
+                }
+              },
+              "required": [
+                "talles"
+              ]
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "categoria": {
+                  "const": "mobles"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "preu": {
+                  "maximum": 500
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "required": [
+    "inventari"
+  ]
+}

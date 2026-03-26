@@ -1,0 +1,39 @@
+{
+    "aplicacio" : "Chiikawa Royale",
+    "data": "31-1-26",
+    "activitats": [
+        {
+            "tipus": "login",
+            "usuari": {
+                "email": "natamontada9999@gmail.com",
+                "rol": "ADMIN"
+            },
+            "detalls": {
+                "ip": "007-111-444p",
+                "desc": "Inici de sessió"
+            }
+        },
+        {
+            "tipus": "modificacio",
+            "usuari": {
+                "email": "natamontada9999@gmail.com",
+                "rol": "ADMIN"
+            },
+            "detalls": {
+                "ip": "007-111-444p",
+                "desc": "Canvi nom d'usuari a AliNeko-chan"
+            }
+        },
+        {
+            "tipus": "esborrat",
+            "usuari": {
+                "email": "natamontada9999@gmail.com",
+                "rol": "ADMIN"
+            },
+            "detalls": {
+                "ip": "007-111-444p",
+                "desc": "Ban a membre discord"
+            }
+        }
+    ]
+}

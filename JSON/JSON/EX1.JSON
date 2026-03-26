@@ -1,0 +1,18 @@
+{
+    "nom": "Jornada IA",
+    "data": "2026-06-15",
+    "organitzador": {
+        "nom": "Institut Tecnològic",
+        "ciutat": "Barcelona"
+    },
+    "participants": [
+        {
+            "nom": "Anna",
+            "edat": 25
+        },
+        {
+            "nom": "Marc",
+            "edat": 30
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "esdeveniment": "Jornades Tech 2026",
+  "data": "2026-05-15",
+  "lloc": "Barcelona",
+  "participants": [
+    { "id": "USR-1001", "nom": "Anna Serra", "edat": 25, "email": "anna@email.com" },
+    { "id": "USR-1002", "nom": "Marc Vila", "edat": 17, "email": "marc@email.com" },
+    { "id": "USR-1003", "nom": "Laura Soler", "edat": 19, "email": "laura@email.com" }
+  ]
+}
+
+
+
+
+
+

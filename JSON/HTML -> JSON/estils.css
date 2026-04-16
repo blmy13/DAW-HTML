@@ -1,0 +1,58 @@
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        form p {
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 100%;
+            padding: 6px;
+        }
+
+        button {
+            padding: 8px 12px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        #btnBuidar {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+        }
+
+        #llista {
+            margin-top: 20px;
+        }
+
+        li {
+            background-color: white;
+            margin: 5px 0;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        pre {
+            background-color: #222;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }

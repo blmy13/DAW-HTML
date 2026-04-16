@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de contactes</title>
+
+    <link rel="stylesheet" href="estils.css">
+
+</head>
+
+<body>
+
+    <h1>Gestor de contactes</h1>
+
+    <form id="formulari">
+        <p>
+            <label>Nom:</label>
+            <input type="text" id="nom">
+        </p>
+
+        <p>
+            <label>Email:</label>
+            <input type="text" id="email">
+        </p>
+
+        <p>
+            <label>Telèfon:</label>
+            <input type="text" id="telefon">
+        </p>
+
+        <button type="submit">Afegir contacte</button>
+    </form>
+
+    <p style="text-align:center;">
+        <button id="btnBuidar">Buidar llista</button>
+    </p>
+
+    <h2>Llista de contactes</h2>
+    <div id="llista"></div>
+
+    <h2>JSON generat</h2>
+    <pre id="json"></pre>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
